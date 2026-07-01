@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "native-tab-repl"
+version = "1.0.0"
+authors = [
+    { name="Umair Shakoor", email="umairshakoor.pro@gmail.com" },
+]
+description = "A lightweight, zero-dependency enhanced Python REPL with cross-platform native tab completion."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Interpreters",
+]
+
+[project.urls]
+Homepage = "https://github.com/unseenumair/urepl"
+Bug-Tracker = "https://github.com/unseenumair/urepl/issues"
+
+[project.scripts]
+urepl = "my_repl.main:start_repl"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/my_repl"]

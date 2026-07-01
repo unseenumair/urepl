@@ -1,0 +1,6 @@
+# Ignore Python build and distribution artifacts
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.pyc
