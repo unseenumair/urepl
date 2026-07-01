@@ -34,5 +34,3 @@ Type `exit()` or `quit()` to drop out cleanly.
 
 * **Repository:** [https://github.com/unseenumair/urepl](https://www.google.com/search?q=https://github.com/unseenumair/urepl)
 * **Author:** [@UmairShakoor](https://github.com/unseenumair)
-
-```
