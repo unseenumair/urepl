@@ -3,13 +3,16 @@ name: Publish to PyPI
 on:
   push:
     tags:
-      - 'v*' # This triggers the automation ONLY when you push a version tag like v1.0.2
+      - 'v*'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      id-token: write # This is required for Trusted Publishing security
+      id-token: write
+
+    environment:
+      name: pypi
 
     steps:
     - name: Checkout code
